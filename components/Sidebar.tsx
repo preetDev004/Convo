@@ -18,7 +18,7 @@ const Sidebar = () => {
               key={link.label}
               href={link.route}
               className={cn(
-                `flex gap-4 items-center py-2 px-4 rounded-lg justify-start hover:bg-gray-700`,
+                `flex gap-4 items-center py-2 px-2 rounded-lg justify-start transition-all duration-300 hover:bg-active-1`,
                 {
                   "bg-active-1": isActive,
                 }
@@ -30,7 +30,7 @@ const Sidebar = () => {
                 width={24}
                 height={24}
               />
-              <p className="text-lg text-gray-200 font-semibold max-lg:hidden">
+              <p className="text-md text-gray-200 font-semibold max-lg:hidden">
                 {link.label}
               </p>
             </Link>

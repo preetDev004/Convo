@@ -29,8 +29,8 @@ const MobileNav = () => {
           <Link href={"/"} className="flex w-full items-center gap-2">
             <Image
               src={"/icons/logo-2.svg"}
-              width={26}
-              height={26}
+              width={30}
+              height={30}
               alt="logo"
             />
             <p className="text-[22px] font-extrabold text-white">Convo</p>
@@ -45,7 +45,7 @@ const MobileNav = () => {
                       <Link
                         href={link.route}
                         className={cn(
-                          `flex gap-4 items-center py-2 px-2 rounded-lg w-full hover:bg-active-1`,
+                          `flex gap-4 items-center py-2 px-2 rounded-lg w-full transition-all duration-200 hover:bg-active-1`,
                           {
                             "bg-active-1": isActive,
                           }
