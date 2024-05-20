@@ -18,7 +18,7 @@ const Sidebar = () => {
               key={link.label}
               href={link.route}
               className={cn(
-                `flex gap-4 items-center py-2 px-2 rounded-lg justify-start transition-all duration-300 hover:bg-active-1`,
+                `flex gap-4 items-center py-2 px-2 br-lg justify-start transition-all duration-200 hover:bg-active-1`,
                 {
                   "bg-active-1": isActive,
                 }

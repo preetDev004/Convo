@@ -8,6 +8,9 @@
   box-sizing: border-box;
 }
 
+.br-lg {
+  border-radius: 5px;
+}
 /* ======== stream css overrides ======== */
 .str-video__call-stats {
   max-width: 500px;
@@ -70,7 +73,13 @@
 .cl-socialButtonsIconButton {
   border: 3px solid #565761;
 }
-
+.cl-avatarImageActionsUpload{
+  color:#007DFC;
+}
+.cl-avatarImageActionsUpload:hover{
+  color:#007DFC;
+  background-color:#007efc0c;
+}
 .cl-internal-wkkub3 {
   color: white;
 }
@@ -80,21 +89,29 @@
 .cl-providerIcon__github {
   filter: invert(1);
 }
-.cl-formFieldInputShowPasswordIcon {
+.cl-formFieldInputShowPasswordIcon, .cl-internal-rvg68x {
   color: white;
 }
-.cl-badge{
-  color: rgb(175, 175, 175)
+.cl-badge {
+  color: rgb(175, 175, 175);
 }
-.cl-userButtonAvatarImage,.cl-userButtonTrigger{
+.cl-avatarImage ,.cl-userButtonBox,.cl-avatarBox {
   width: 40px;
   height: 40px;
 }
- .cl-button__manageAccount:hover,.cl-button__signOut:hover{
+.cl-button__manageAccount:hover,
+.cl-button__signOut:hover {
   color: white;
-  background-color: #3d3e46
+  background-color: #3d3e46;
 }
-
+.cl-menuButton__connectedAccounts {
+  border:none;
+  transition: all 0.3s;
+}
+.cl-internal-1pmoz52:hover{
+  background-color: #007DFC;
+  
+}
 /* =============================== */
 
 @layer utilities {

@@ -56,10 +56,31 @@ const config = {
           1: "#1C1F2E",
           2: "#161925",
         },
+        sky:{
+          1:'#C8DDFF',
+          2:'#ECF0FF',
+          3:'#F5FCFF',
+        },
+        green:{
+          1:'#37BF56',
+        },
+        orange:{
+          1:'#FF742E',
+        },
+        purple:{
+          1:'#830EF9',
+        },
+        yellow:{
+          1:'#F9A90E',
+        },
         active:{
-          1:'#007DFC'
+          1:'#007DFC',
+          2:'#025BB5'
         }
         
+      },
+      backgroundImage:{
+        hero : "url('/images/hero-background.png')",
       },
       borderRadius: {
         lg: "var(--radius)",
