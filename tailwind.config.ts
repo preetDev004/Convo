@@ -7,6 +7,7 @@ const config = {
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
+    './@/**/*.{ts,tsx}',
   ],
   prefix: "",
   theme: {
@@ -63,6 +64,10 @@ const config = {
         },
         green:{
           1:'#37BF56',
+          2:'#3C6D33'
+        },
+        red:{
+          1:'#7F1D1D',
         },
         orange:{
           1:'#FF742E',
