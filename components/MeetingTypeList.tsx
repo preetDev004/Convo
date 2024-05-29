@@ -81,14 +81,14 @@ const MeetingTypeList = () => {
       />
       <HomeCard
         title="Schedule Meeting"
-        desc="Schedule a meeting for future"
+        desc="Plan meeting for future"
         bgColor="bg-green-1"
         icon="/icons/schedule.svg"
         handleClick={() => setMeetingState("isScheduledMeeting")}
       />
       <HomeCard
         title="View Recordings"
-        desc="See your meetings recordings"
+        desc="Re-view your meetings"
         bgColor="bg-purple-1"
         icon="/icons/recordings.svg"
         handleClick={() => router.push("/recordings")}
