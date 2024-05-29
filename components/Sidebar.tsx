@@ -9,8 +9,8 @@ const Sidebar = () => {
   const pathname = usePathname();
   return (
     // sidebar
-    <section className="sticky left-0 top-0 flex h-screen w-fit flex-col justify-between bg-dark-1 p-2 pt-28 text-white max-sm:hidden lg:w-[264px]">
-      <div className="flex flex-1 flex-col gap-6">
+    <section className="sticky left-0 top-0 flex h-screen w-fit flex-col justify-between bg-dark-1 px-2 pt-28 text-white max-sm:hidden lg:w-[264px]">
+      <div className="flex flex-1 flex-col gap-6 lg:gap-4">
         {sidebarLinks.map((link) => {
           const isActive = pathname === link.route;
           return (
@@ -18,10 +18,10 @@ const Sidebar = () => {
               key={link.label}
               href={link.route}
               className={cn(
-                `flex gap-4 items-center py-2 px-2 br-lg justify-start transition-all duration-200 hover:bg-active-1`,
-                {
-                  "bg-active-1": isActive,
-                }
+                `flex gap-4 items-center p-4 br-lg justify-start transition-all duration-200 hover:bg-active-1`,
+                // {
+                //   "bg-active-1": isActive,
+                // }
               )}
             >
               <Image

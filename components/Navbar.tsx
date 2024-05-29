@@ -5,7 +5,7 @@ import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between fixed z-50 w-full bg-dark-1 px-6 py-4 lg:px-10">
+    <nav className="flex justify-between fixed z-50 w-full bg-dark-1 px-4 py-4 lg:px-5">
       {/* Mobile navbar */}
       <div className="flex justify-between gap-5 sm:hidden">
         <MobileNav />
