@@ -17,8 +17,8 @@ const HomeCard = (props: HomeCardProps) => {
         <Image src={props.icon} alt={props.title} width={27} height={27} />
       </div>
       <div className="flex flex-col gap-2">
-        <h1 className="text-2xl font-bold">{props.title}</h1>
-        <p className="text-lg font-normal">{props.desc}</p>
+        <h1 className="text-lg sm:text-xl font-bold">{props.title}</h1>
+        <p className="text-md font-normal">{props.desc}</p>
       </div>
     </div>
   );

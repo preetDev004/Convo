@@ -14,6 +14,7 @@ const MeetingSetup = ({
 }) => {
   const [isMicCamToggledOn, setIsMicCamToggledOn] = useState(false);
   const call = useCall();
+  
 
   if (!call)
     throw new Error("useCall hook must be called under StreamCall component.");
@@ -31,7 +32,7 @@ const MeetingSetup = ({
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center gap-3  text-white">
       <h1 className="text-2xl font-bold">Setup Your Audio/Vdeo</h1>
-      <VideoPreview className="flex w-[95%] sm:w-[70%] md:w-[60%] xl:w-[50%] h-auto flex-col items-center justify-center" />
+      <VideoPreview className="flex w-[95%] sm:w-[70%] md:w-[60%] xl:w-[50%] h-auto flex-col items-center justify-center rounded-md" />
       <div className="flex h-16 items-center justify-center gap-3">
         <label className="flex items-center justify-center gap-2 font-medium">
           <input

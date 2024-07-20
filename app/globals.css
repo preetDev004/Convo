@@ -114,6 +114,9 @@
   background-color: #007DFC;
   
 }
+.cl-internal-16rjnjd{
+  visibility: hidden;
+}
 /* =============================== */
 
 @layer utilities {
@@ -170,4 +173,20 @@
   border: solid white;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
+}
+.str-video__menu-container{
+  border-radius: 10px !important;
+  margin-left: 10px;
+}
+.str-video__device-settings{
+  background-color: #2b2f47cb;
+  
+}
+.str-video__device-settings__device-kind{
+  background: none !important ;
+  border-radius: 0 !important;
+}
+.str-video__device-settings__option{
+  border-radius: 6px !important;
+
 }
