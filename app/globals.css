@@ -190,3 +190,24 @@
   border-radius: 6px !important;
 
 }
+
+.d-menu-item:hover{
+  background: #49507765 !important;
+  border-radius: 5%;
+}
+.str-video__icon{
+  background-color: rgb(255, 255, 255) !important;
+}
+.str-video__call-stats,.str-video__call-stats__card,.str-video__menu-container,.str-video__generic-menu{
+  background-color: #1c1f2ec5 !important;
+
+}
+.str-video__generic-menu--item,.str-video__generic-menu--item>button {
+  background-color: #262a3e !important;
+  border-radius: 10px !important;
+}
+.str-video__generic-menu--item:hover,.str-video__generic-menu--item>button:hover {
+  background-color: #3c4263 !important;
+
+}
+
