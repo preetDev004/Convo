@@ -1,6 +1,15 @@
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
+import { Metadata } from "next";
 import React, { ReactNode } from "react";
+
+export const metadata: Metadata = {
+  title: "Convvo",
+  description: "A Simple web Video & Audio Conferencing app with all the needed features.",
+  icons:{
+    icon: '/icons/logo-2.svg'
+  }
+};
 
 const HomeLayout = ({ children }: { children: ReactNode }) => {
   return (

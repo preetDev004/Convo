@@ -202,7 +202,7 @@
   background-color: #1c1f2ec5 !important;
 
 }
-.str-video__generic-menu--item,.str-video__generic-menu--item>button {
+.str-video__generic-menu--item,.str-video__generic-menu--item>button,.str-video__search-input__container {
   background-color: #262a3e !important;
   border-radius: 10px !important;
 }
@@ -211,3 +211,13 @@
 
 }
 
+.show-block {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  animation: show 0.3s forwards linear !important;
+}
+
+.end-meeting:hover{
+  background-color: rgb(255, 95, 95) !important;
+}

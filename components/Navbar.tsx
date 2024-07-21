@@ -21,14 +21,14 @@ const Navbar = () => {
           className="max-sm:size-10"
         />
         <p className="text-[26px] font-extrabold text-white max-sm:hidden">
-          Convo
+          Convvo
         </p>
       </Link>
 
       {/* clerk user management */}
       <div className="flex justify-between gap-5">
         <SignedOut>
-          <SignInButton/>
+          <SignInButton />
         </SignedOut>
         <SignedIn>
           <UserButton />
