@@ -58,7 +58,7 @@ const MeetingRoom = () => {
   };
 
   return (
-    <section className="relative flex flex-col items-center justify-between gap-5 h-screen w-full pt-4 text-white overflow-hidden ">
+    <section className="relative flex flex-col items-center justify-between gap-5 h-screen w-full pt-4 text-white">
       <div className="w-full flex items-center justify-center gap-4">
         <CallStatsButton />
         <DropdownMenu>

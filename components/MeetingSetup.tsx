@@ -8,7 +8,7 @@ import {
 import React, { useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import { ArrowLeft } from "lucide-react";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const MeetingSetup = ({
   setIsSetupComplete,
@@ -17,6 +17,7 @@ const MeetingSetup = ({
 }) => {
   const [isMicCamToggledOn, setIsMicCamToggledOn] = useState(false);
   const call = useCall();
+  const router = useRouter();
 
   if (!call)
     throw new Error("useCall hook must be called under StreamCall component.");
@@ -30,22 +31,24 @@ const MeetingSetup = ({
       call?.microphone.enable();
     }
   }, [isMicCamToggledOn, call?.camera, call?.microphone]);
-  
+
   const { useCallEndedAt } = useCallStateHooks();
   const isCallEnded = useCallEndedAt();
   if (!!isCallEnded) {
     return (
       <div className="flex h-screen w-full flex-col items-center justify-center gap-3 text-white overflow-hidden">
         <h3> The Meeting has ended!</h3>
-        <Link href={'/'}>
+
         <Button
-        className="flex gap-2 justify-center items-center br-lg bg-green-600 hover:bg-green-700 px-4 py-2.5"
-       
-      >
-        <ArrowLeft/>
-        Go Back
-      </Button>
-      </Link>
+          className="flex gap-2 justify-center items-center br-lg bg-green-600 hover:bg-green-700 px-4 py-2.5"
+          onClick={() => {
+            setIsMicCamToggledOn(true)
+            router.push("/")
+          }}
+        >
+          <ArrowLeft />
+          Go Back
+        </Button>
       </div>
     );
   }
