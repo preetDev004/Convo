@@ -75,12 +75,12 @@
 .cl-socialButtonsIconButton {
   border: 3px solid #565761;
 }
-.cl-avatarImageActionsUpload{
-  color:#007DFC;
+.cl-avatarImageActionsUpload {
+  color: #007dfc;
 }
-.cl-avatarImageActionsUpload:hover{
-  color:#007DFC;
-  background-color:#007efc0c;
+.cl-avatarImageActionsUpload:hover {
+  color: #007dfc;
+  background-color: #007efc0c;
 }
 .cl-internal-wkkub3 {
   color: white;
@@ -91,13 +91,16 @@
 .cl-providerIcon__github {
   filter: invert(1);
 }
-.cl-formFieldInputShowPasswordIcon, .cl-internal-rvg68x {
+.cl-formFieldInputShowPasswordIcon,
+.cl-internal-rvg68x {
   color: white;
 }
 .cl-badge {
   color: rgb(175, 175, 175);
 }
-.cl-avatarImage ,.cl-userButtonBox,.cl-avatarBox {
+.cl-avatarImage,
+.cl-userButtonBox,
+.cl-avatarBox {
   width: 40px;
   height: 40px;
 }
@@ -107,14 +110,13 @@
   background-color: #3d3e46;
 }
 .cl-menuButton__connectedAccounts {
-  border:none;
+  border: none;
   transition: all 0.3s;
 }
-.cl-internal-1pmoz52:hover{
-  background-color: #007DFC;
-  
+.cl-internal-1pmoz52:hover {
+  background-color: #007dfc;
 }
-.cl-internal-16rjnjd{
+.cl-internal-16rjnjd {
   visibility: hidden;
 }
 /* =============================== */
@@ -151,8 +153,8 @@
 }
 .custom-checkbox {
   appearance: none;
-  background-color: #1C1F2E !important;
-  border: 2px solid #007DFC !important;
+  background-color: #1c1f2e !important;
+  border: 2px solid #007dfc !important;
   border-radius: 4px !important;
   width: 20px !important;
   height: 20px !important;
@@ -160,11 +162,11 @@
 }
 
 .custom-checkbox:checked {
-  background-color: #007DFC !important;
+  background-color: #007dfc !important;
 }
 
 .custom-checkbox:checked::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 2px;
   left: 6px;
@@ -174,41 +176,43 @@
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
-.str-video__menu-container{
+.str-video__menu-container {
   border-radius: 10px !important;
   margin-left: 10px;
 }
-.str-video__device-settings{
+.str-video__device-settings {
   background-color: #2b2f47cb;
-  
 }
-.str-video__device-settings__device-kind{
+.str-video__device-settings__device-kind {
   background: none !important ;
   border-radius: 0 !important;
 }
-.str-video__device-settings__option{
+.str-video__device-settings__option {
   border-radius: 6px !important;
-
 }
 
-.d-menu-item:hover{
+.d-menu-item:hover {
   background: #49507765 !important;
   border-radius: 5%;
 }
-.str-video__icon{
+.str-video__icon {
   background-color: rgb(255, 255, 255) !important;
 }
-.str-video__call-stats,.str-video__call-stats__card,.str-video__menu-container,.str-video__generic-menu{
+.str-video__call-stats,
+.str-video__call-stats__card,
+.str-video__menu-container,
+.str-video__generic-menu {
   background-color: #1c1f2ec5 !important;
-
 }
-.str-video__generic-menu--item,.str-video__generic-menu--item>button,.str-video__search-input__container {
+.str-video__generic-menu--item,
+.str-video__generic-menu--item > button,
+.str-video__search-input__container {
   background-color: #262a3e !important;
   border-radius: 10px !important;
 }
-.str-video__generic-menu--item:hover,.str-video__generic-menu--item>button:hover {
+.str-video__generic-menu--item:hover,
+.str-video__generic-menu--item > button:hover {
   background-color: #3c4263 !important;
-
 }
 
 .show-block {
@@ -218,6 +222,47 @@
   animation: show 0.3s forwards linear !important;
 }
 
-.end-meeting:hover{
+.end-meeting:hover {
   background-color: rgb(255, 95, 95) !important;
+}
+
+.react-datepicker__month-container,
+.react-datepicker-popper{
+  background-color: #292d42 !important;
+  /* border: none !important; */
+  border-radius: 10px !important;
+  color: white !important;
+}
+.react-datepicker {
+  border:none !important;
+  background-color: #292d42 !important;
+}
+
+.react-datepicker__day-names,
+.react-datepicker__current-month,
+.react-datepicker__time-list,
+.react-datepicker__header--time,
+.react-datepicker-time__header,
+.react-datepicker__month,.react-datepicker__day ,
+.react-datepicker__day-name,
+.react-datepicker__header {
+  /* fill: color(red) !important; */
+  background-color: #292d42  !important;
+  /* border: none !important; */
+  /* border-radius: 10px !important; */
+  color: white !important;
+}
+.react-datepicker__day--selected,
+.react-datepicker__time-list-item--selected {
+  background-color: #007dfc !important;
+  color: white !important;
+}
+.react-datepicker__time-container {
+  background-color: #292d42 !important;
+  /* border: none !important; */
+  color: white !important;
+}
+
+.react-datepicker__time-list-item:hover,.react-datepicker__day:hover{
+  background-color: #43496b !important;
 }

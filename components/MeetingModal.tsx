@@ -39,7 +39,7 @@ const MeetingModal = (props: MeetingModalProps) => {
             onClick={props.handleClick}
           >
             {props.btnIcon && (
-              <Image src={props.btnIcon} alt="ButtonIcon" width={13} height={13} />
+              <Image src={props.btnIcon} alt="ButtonIcon" width={18} height={18} />
             )}
             &nbsp;
             {props.btnText || "Schedule Meeting"}

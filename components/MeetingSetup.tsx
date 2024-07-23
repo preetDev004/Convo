@@ -8,7 +8,7 @@ import {
 import React, { useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import { ArrowLeft } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation"
 
 const MeetingSetup = ({
   setIsSetupComplete,
@@ -32,7 +32,8 @@ const MeetingSetup = ({
     }
   }, [isMicCamToggledOn, call?.camera, call?.microphone]);
 
-  const { useCallEndedAt } = useCallStateHooks();
+  const { useCallEndedAt, useCallStartsAt } = useCallStateHooks();
+  const callStartsAt = useCallStartsAt();
   const isCallEnded = useCallEndedAt();
   if (!!isCallEnded) {
     return (
@@ -53,6 +54,7 @@ const MeetingSetup = ({
     );
   }
 
+  console.log(Math.floor(((callStartsAt?.getTime() || (new Date()).getTime()) - (new Date()).getTime()) / 60000));
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center gap-3 text-white overflow-hidden">
       <h1 className="text-2xl font-bold">Setup Your Audio/Vdeo</h1>
