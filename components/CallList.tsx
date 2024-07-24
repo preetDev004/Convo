@@ -6,7 +6,6 @@ import React, { useState } from "react";
 import MeetingCard from "./MeetingCard";
 import SearchLoader from "./SearchLoader";
 
-
 const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
   const { endedCalls, upcomingCalls, callRecordings, isLoading } =
     useGetCalls();
@@ -31,11 +30,7 @@ const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
 
   const calls = getCalls();
   if (isLoading) {
-    return (
-      
-        <SearchLoader/>
-
-    );
+    return <SearchLoader />;
   }
   if (typeof calls === "string") {
     return <h1>{calls}</h1>;
@@ -46,7 +41,7 @@ const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
       {calls && calls.length > 0 ? (
         calls.map((call: Call | CallRecording, index) => (
           <div key={index}>
-            <MeetingCard />
+            <MeetingCard call={call} />
           </div>
         ))
       ) : (
