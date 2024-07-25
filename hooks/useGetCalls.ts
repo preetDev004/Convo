@@ -40,18 +40,23 @@ export const useGetCalls = () => {
   }, [client, user?.user?.id]);
 
   const now = new Date();
+  const dateWeekAgo = new Date().setDate(now.getDate() - 7);
+  const callRecordings = calls;
 
   //   filter calls by endedCalls
   const endedCalls = calls.filter(({ state: { startsAt, endedAt } }: Call) => {
-    return (startsAt && new Date(startsAt) < now) || !!endedAt;
+    return (
+      ((startsAt && new Date(startsAt) < now) || !!endedAt) &&
+      startsAt &&
+      dateWeekAgo <= new Date(startsAt).getTime()
+    );
   });
   //   filter calls by upcomingCalls
   const upcomingCalls = calls.filter(
     ({ state: { startsAt, endedAt } }: Call) => {
       return startsAt && new Date(startsAt) > now;
     }
-  );
-  const callRecordings = calls;
+  ).reverse();
 
   return { endedCalls, upcomingCalls, callRecordings, isLoading };
 };
