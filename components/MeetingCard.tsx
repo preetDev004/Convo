@@ -107,7 +107,7 @@ const MeetingCard = (props: MeetingCardProps) => {
                   duration: 2500,
                 });
               }}
-              className="hover:bg-[#7676764b] bg-[#7676761e] px-6 rounded"
+              className="hover:bg-[#7676764b] bg-[#7676761e] px-6 rounded text-sky-1"
             >
               <Image
                 src="/icons/copy.svg"
