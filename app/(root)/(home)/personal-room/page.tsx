@@ -42,17 +42,17 @@ const PersonalRoom = () => {
             {title.charAt(0).toUpperCase() + title.slice(1)}
           </p>
           <div className="w-full flex flex-col gap-4">
-            <p className="flex justify-between gap-4">
+            <p className="flex justify-between items-center gap-4">
               <span className="font-medium">Room ID </span>{" "}
-              <span className="font-light">{meetingId}</span>
+              <span className="font-light text-sm">{meetingId}</span>
             </p>
-            <p className="md:flex justify-between gap-4 hidden">
+            <p className="md:flex justify-between items-center gap-4 hidden">
               <span className="font-medium">Invite Link </span>{" "}
-              <span className="font-light">{meetingLink}</span>
+              <span className="font-light text-sm">{meetingLink}</span>
             </p>
-            <p className="flex justify-between gap-4 md:hidden">
+            <p className="flex justify-between items-center gap-4 md:hidden">
               <span className="font-medium">Invite Link </span>{" "}
-              <span className="font-light">{meetingLink.length > 30 ? meetingLink.substring(0,30)+"...":meetingLink}</span>
+              <span className="font-light text-sm">{meetingLink.length > 30 ? meetingLink.substring(0,30)+"...":meetingLink}</span>
             </p>
           </div>
           <div className="w-full flex flex-row gap-4">
