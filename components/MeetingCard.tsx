@@ -92,8 +92,8 @@ const MeetingCard = (props: MeetingCardProps) => {
                 <Image
                   src={props.btnIcon1}
                   alt="feature"
-                  width={20}
-                  height={20}
+                  width={18}
+                  height={18}
                 />
               )}
               {props.btnIcon1 && <span>&nbsp;</span>}{props.btnText}
