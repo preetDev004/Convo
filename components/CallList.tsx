@@ -55,9 +55,9 @@ const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
 
         const recordings = callData
           .filter((call) => call.recordings.length > 0)
-          .flatMap((call) => call.recordings);
+          .flatMap((call) => call.recordings)
 
-        setRecordings(recordings.reverse());
+        setRecordings(recordings);
       } catch (error: any) {
         if (error?.response && error?.response?.status === 404) {
           toast({
@@ -92,8 +92,8 @@ const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
               index
             }
             title={
-              (meeting as Call).state?.custom.description.substr(0, 20) ||
-              (meeting as CallRecording).filename.substring(0, 20) ||
+              (meeting as Call).state?.custom?.description?.substr(0, 20) ||
+              (meeting as CallRecording)?.filename?.substring(0, 20) ||
               "No Description"
             }
             icon={
