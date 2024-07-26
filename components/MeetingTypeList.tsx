@@ -181,7 +181,10 @@ const MeetingTypeList = () => {
         <MeetingModal
           isOpen={meetingState === "isScheduledMeeting"}
           title={"Meeting Scheduled!"}
-          onClose={() => setMeetingState(undefined)}
+          onClose={() => {
+            setMeetingState(undefined);
+            setCallDetails(undefined);
+          }}
           className="text-center"
           handleClick={() => {
             navigator.clipboard.writeText(meetingLink);
@@ -211,7 +214,7 @@ const MeetingTypeList = () => {
         className="text-center"
         btnText="Join Meeting"
         handleClick={() => {
-          router.push(values.link)
+          router.push(values.link);
         }}
       >
         <Input
